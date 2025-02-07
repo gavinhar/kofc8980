@@ -5,13 +5,11 @@ import { Link } from '@inertiajs/vue3';
 <template>
     <Link :href="'/'">
         <svg
-            version="1.1"
             id="svg2"
             width="96"
             height="96"
             viewBox="0 0 96 96"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:svg="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg">
             <defs
                 id="defs6" />
             <g
