@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('albums', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
             $table->string('name');
             $table->string('description');
             $table->date('date');
@@ -22,6 +23,7 @@ return new class extends Migration
         Schema::create('photos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('album_id')->constrained();
+            $table->foreignId('user_id')->constrained();
             $table->string('description');
             $table->integer('position');
             $table->boolean('is_cover');
