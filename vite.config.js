@@ -18,4 +18,12 @@ export default defineConfig({
             },
         }),
     ],
+
+    // enable live reload for laravel herd!
+    server: {
+        host: '0.0.0.0',
+        hmr: {
+            host: 'kofc8980.test',
+        },
+    },
 });
